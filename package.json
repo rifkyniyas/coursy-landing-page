@@ -1,0 +1,24 @@
+{
+  "name": "coursy-landing-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "tailwindcss": "^3.0.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "watch-css": "npx tailwindcss -i ./css/styles.css -o ./css/dist.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rifkyniyas/coursy-landing-page.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rifkyniyas/coursy-landing-page/issues"
+  },
+  "homepage": "https://github.com/rifkyniyas/coursy-landing-page#readme"
+}
