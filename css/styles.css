@@ -5,7 +5,7 @@
 @layer base {
   body {
     font-family: "General Sans", sans-serif;
-    @apply text-xl;
+    @apply text-xl text-black;
   }
   nav {
     @apply text-white;
@@ -13,16 +13,29 @@
   p {
     @apply my-2;
   }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    @apply font-medium;
+  }
+  h1 {
+    @apply leading-normal my-5 text-6xl;
+  }
+  h5 {
+    @apply my-5 text-2xl;
+  }
 }
 @layer components {
   .bg-image-cover {
     @apply bg-cover bg-no-repeat bg-scroll bg-center;
   }
-  .heading-xl {
-    @apply text-6xl text-white my-5;
-  }
   .featured-container {
     @apply bg-white py-14 px-14 rounded-xl;
+  }
+  .faq-container p {
+    @apply text-gray-text;
   }
   /* Buttons */
   .button {

@@ -427,6 +427,8 @@ body {
   font-family: "General Sans", sans-serif;
   font-size: 1.25rem;
   line-height: 1.75rem;
+  --tw-text-opacity: 1;
+  color: rgb(30 36 50 / var(--tw-text-opacity));
 }
 
 nav {
@@ -439,20 +441,29 @@ p {
   margin-bottom: 0.5rem;
 }
 
+h1, h2, h3, h4, h5 {
+  font-weight: 500;
+}
+
+h1 {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  font-size: 3.75rem;
+  line-height: 1.5;
+}
+
+h5 {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
 .bg-image-cover {
   background-size: cover;
   background-attachment: scroll;
   background-position: center;
   background-repeat: no-repeat;
-}
-
-.heading-xl {
-  margin-top: 1.25rem;
-  margin-bottom: 1.25rem;
-  font-size: 3.75rem;
-  line-height: 1;
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .featured-container {
@@ -463,6 +474,11 @@ p {
   padding-bottom: 3.5rem;
   padding-left: 3.5rem;
   padding-right: 3.5rem;
+}
+
+.faq-container p {
+  --tw-text-opacity: 1;
+  color: rgb(111 115 124 / var(--tw-text-opacity));
 }
 
 /* Buttons */
@@ -488,6 +504,22 @@ p {
 
 .button-primary:hover {
   background-color: rgba(255, 255, 255, 0.8);
+}
+
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.top-0 {
+  top: 0px;
+}
+
+.right-0 {
+  right: 0px;
 }
 
 .my-auto {
@@ -532,12 +564,20 @@ p {
   display: flex;
 }
 
+.grid {
+  display: grid;
+}
+
 .min-h-screen {
   min-height: 100vh;
 }
 
 .max-w-6xl {
   max-width: 72rem;
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .flex-col {
@@ -560,18 +600,23 @@ p {
   justify-content: space-around;
 }
 
-.rounded-xl {
-  border-radius: 0.75rem;
+.gap-x-16 {
+  -moz-column-gap: 4rem;
+       column-gap: 4rem;
+}
+
+.gap-y-16 {
+  row-gap: 4rem;
+}
+
+.gap-x-8 {
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
 }
 
 .bg-gray-dark {
   --tw-bg-opacity: 1;
   background-color: rgb(238 242 245 / var(--tw-bg-opacity));
-}
-
-.bg-white {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .bg-hero-image {
@@ -588,14 +633,14 @@ p {
   padding-right: 2rem;
 }
 
-.py-14 {
-  padding-top: 3.5rem;
-  padding-bottom: 3.5rem;
+.py-32 {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
 }
 
-.px-14 {
-  padding-left: 3.5rem;
-  padding-right: 3.5rem;
+.px-16 {
+  padding-left: 4rem;
+  padding-right: 4rem;
 }
 
 .pt-20 {
@@ -615,11 +660,11 @@ p {
   line-height: 1.5rem;
 }
 
-.text-gray-light {
-  color: rgba(255, 255, 255, 0.7);
-}
-
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-gray-light {
+  color: rgba(255, 255, 255, 0.7);
 }
