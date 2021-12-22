@@ -7,9 +7,12 @@ module.exports = {
         'hero-image': "url('/images/hero-bg.svg')",
       },
       colors: {
-        'light-gray': 'rgba(255, 255, 255, 0.7)',
+        gray : {
+          light: 'rgba(255, 255, 255, 0.7)',
+          hover: 'rgba(255, 255, 255, 0.8)',
+          dark: '#eef2f5',
+        },
         'black': '#1e2432',
-        'hover-gray': 'rgba(255, 255, 255, 0.8)',
         'hover-black': '#4b505b'
       },
     }
