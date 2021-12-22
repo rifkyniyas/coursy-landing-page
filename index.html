@@ -9,38 +9,49 @@
     <link rel="stylesheet" href="./css/dist.css">
 </head>
 <body>
-    <article class="min-h-screen bg-hero-image bg-image-cover">
-        <header class="mx-14">
-            <a href="#">
-                <img src="./images/coursy-logo.svg" alt="">
-            </a>
-            <nav>
+    <article class="min-h-screen bg-hero-image bg-image-cover
+    flex flex-col">
+        <header class="max-w-6xl py-5 px-8 flex justify-between">
+            <nav class="d-flex justify-between">
+                <a href="#">
+                    <img src="./images/coursy-logo.svg" 
+                    alt="logo" class="inline">
+                </a>
                 <a href="">Home</a>
                 <a href="">About</a>
                 <a href="">Courses</a>
                 <a href="">Contact</a>
             </nav>
-            <button>Enroll Now</button>
+            <button class="button button-primary">Enroll Now</button>
         </header>
-        <section>
-            <h1 class="text-lg">
-                Here comes the course headline
-            </h1>
-            <p>
-                Lorem ipsum doler sit amet conse. Mauris volutpat elit sed tellus suscipit euis mod. Sed sit amet est vel dui
-                consequat
-                lobortis.
-            </p>
-            <button>Enroll Now</button>
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <span>Join 1000+ students</span>
-            <img src="" alt="">
-        </section>
-        <section>
-            <img src="" alt="">
-        </section>
+        <article class="flex justify-center my-auto mx-auto 
+        max-w-6xl px-8">
+            <article class="flex flex-col align-center">
+                <h1 class="heading-xl">
+                    Here comes the course headline
+                </h1>
+                <p class="text-light-gray">
+                    Lorem ipsum doler sit amet conse. Mauris volutpat elit sed tellus suscipit euis mod. Sed sit amet est vel dui
+                    consequat
+                    lobortis.
+                </p>
+                <article class="mt-7">
+                    <button class="button button-primary">
+                        Enroll Now
+                    </button>
+                    <article class="flex items-center">
+                        <img src="./images/avatars.png" alt="hero-avatars" 
+                            class="mr-5">
+                        <span class="text-white">Join 1000+ students</span>
+                        <img src="./images/hero-arrow.svg" alt="up-arrow" class="">
+                    </article>
+                </article>
+            </article>
+            <aside class="">
+                <img src="./images/hero-image.jpg" 
+                    alt="hero-section-image" class="inline-block">
+            </aside>
+        </article>
     </article>
     <section>
         <h3>COURSE FEATURED ON</h3>
