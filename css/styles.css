@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  body {
+    font-family: "General Sans", sans-serif;
+  }
+}
+@layer components {
+  .bg-image-cover {
+    @apply bg-cover bg-no-repeat bg-scroll bg-center;
+  }
+}

@@ -423,6 +423,30 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: none;
 }
 
+body {
+  font-family: "General Sans", sans-serif;
+}
+
+.bg-image-cover {
+  background-size: cover;
+  background-attachment: scroll;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.mx-14 {
+  margin-left: 3.5rem;
+  margin-right: 3.5rem;
+}
+
+.min-h-screen {
+  min-height: 100vh;
+}
+
+.bg-hero-image {
+  background-image: url('/images/hero-bg.svg');
+}
+
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
