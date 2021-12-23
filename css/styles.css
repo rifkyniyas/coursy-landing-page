@@ -20,6 +20,9 @@
   h5 {
     @apply font-medium;
   }
+  nav a:hover {
+    @apply underline;
+  }
   h1 {
     @apply leading-normal my-5 text-6xl;
   }

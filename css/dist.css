@@ -445,6 +445,11 @@ h1, h2, h3, h4, h5 {
   font-weight: 500;
 }
 
+nav a:hover {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+
 h1 {
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
@@ -617,6 +622,10 @@ h5 {
   margin-top: 1.25rem;
 }
 
+.mr-8 {
+  margin-right: 2rem;
+}
+
 .inline-block {
   display: inline-block;
 }
@@ -631,6 +640,10 @@ h5 {
 
 .grid {
   display: grid;
+}
+
+.h-full {
+  height: 100%;
 }
 
 .min-h-screen {
@@ -679,8 +692,21 @@ h5 {
        column-gap: 2rem;
 }
 
+.gap-y-5 {
+  row-gap: 1.25rem;
+}
+
+.gap-x-5 {
+  -moz-column-gap: 1.25rem;
+       column-gap: 1.25rem;
+}
+
 .rounded-xl {
   border-radius: 0.75rem;
+}
+
+.rounded-md {
+  border-radius: 0.375rem;
 }
 
 .bg-gray-dark {
@@ -688,8 +714,17 @@ h5 {
   background-color: rgb(238 242 245 / var(--tw-bg-opacity));
 }
 
+.bg-primary {
+  --tw-bg-opacity: 1;
+  background-color: rgb(1 33 110 / var(--tw-bg-opacity));
+}
+
 .bg-hero-image {
   background-image: url('/images/hero-bg.svg');
+}
+
+.bg-cta-image {
+  background-image: url('/images/cta-bg.svg');
 }
 
 .py-5 {
@@ -710,6 +745,11 @@ h5 {
 .px-16 {
   padding-left: 4rem;
   padding-right: 4rem;
+}
+
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
 }
 
 .pt-20 {
