@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         'hero-image': "url('/images/hero-bg.svg')",
+        'cta-image': "url('/images/cta-bg.svg')"
       },
       colors: {
         gray : {

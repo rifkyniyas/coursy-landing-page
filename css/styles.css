@@ -31,11 +31,20 @@
   .bg-image-cover {
     @apply bg-cover bg-no-repeat bg-scroll bg-center;
   }
+  .section-heading {
+    @apply leading-snug my-5 text-6xl font-medium;
+  }
   .featured-container {
     @apply bg-white py-14 px-14 rounded-xl;
   }
   .faq-container p {
     @apply text-gray-text;
+  }
+  .chapter-list {
+    @apply text-2xl font-medium grid gap-y-6 my-8;
+  }
+  .chapter-list li {
+    @apply flex items-center gap-x-5;
   }
   /* Buttons */
   .button {

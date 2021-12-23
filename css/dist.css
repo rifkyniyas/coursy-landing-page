@@ -466,6 +466,14 @@ h5 {
   background-repeat: no-repeat;
 }
 
+.section-heading {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  font-size: 3.75rem;
+  font-weight: 500;
+  line-height: 1.375;
+}
+
 .featured-container {
   border-radius: 0.75rem;
   --tw-bg-opacity: 1;
@@ -479,6 +487,23 @@ h5 {
 .faq-container p {
   --tw-text-opacity: 1;
   color: rgb(111 115 124 / var(--tw-text-opacity));
+}
+
+.chapter-list {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: grid;
+  row-gap: 1.5rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 500;
+}
+
+.chapter-list li {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 1.25rem;
+       column-gap: 1.25rem;
 }
 
 /* Buttons */
@@ -506,6 +531,18 @@ h5 {
   background-color: rgba(255, 255, 255, 0.8);
 }
 
+.button-secondary {
+  --tw-bg-opacity: 1;
+  background-color: rgb(30 36 50 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.button-secondary:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(75 80 91 / var(--tw-bg-opacity));
+}
+
 .absolute {
   position: absolute;
 }
@@ -514,12 +551,36 @@ h5 {
   position: relative;
 }
 
-.top-0 {
-  top: 0px;
+.top-2\/4 {
+  top: 50%;
+}
+
+.left-0 {
+  left: 0px;
+}
+
+.bottom-0 {
+  bottom: 0px;
 }
 
 .right-0 {
   right: 0px;
+}
+
+.left-auto {
+  left: auto;
+}
+
+.top-auto {
+  top: auto;
+}
+
+.top-0 {
+  top: 0px;
+}
+
+.-z-10 {
+  z-index: -10;
 }
 
 .my-auto {
@@ -550,6 +611,10 @@ h5 {
 
 .mt-2 {
   margin-top: 0.5rem;
+}
+
+.mt-5 {
+  margin-top: 1.25rem;
 }
 
 .inline-block {
@@ -600,9 +665,9 @@ h5 {
   justify-content: space-around;
 }
 
-.gap-x-16 {
-  -moz-column-gap: 4rem;
-       column-gap: 4rem;
+.gap-x-28 {
+  -moz-column-gap: 7rem;
+       column-gap: 7rem;
 }
 
 .gap-y-16 {
@@ -612,6 +677,10 @@ h5 {
 .gap-x-8 {
   -moz-column-gap: 2rem;
        column-gap: 2rem;
+}
+
+.rounded-xl {
+  border-radius: 0.75rem;
 }
 
 .bg-gray-dark {
@@ -667,4 +736,9 @@ h5 {
 
 .text-gray-light {
   color: rgba(255, 255, 255, 0.7);
+}
+
+.text-gray-text {
+  --tw-text-opacity: 1;
+  color: rgb(111 115 124 / var(--tw-text-opacity));
 }
