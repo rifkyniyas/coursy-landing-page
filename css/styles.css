@@ -24,10 +24,10 @@
     @apply underline;
   }
   h1 {
-    @apply leading-normal my-5 text-6xl;
+    @apply leading-normal my-5 text-6xl font-medium;
   }
   h5 {
-    @apply my-5 text-2xl;
+    @apply my-5 text-2xl font-medium;
   }
 }
 @layer components {
@@ -48,6 +48,21 @@
   }
   .chapter-list li {
     @apply flex items-center gap-x-5;
+  }
+  .pricing-card {
+    @apply bg-white p-10 text-center rounded-xl;
+  }
+  .pricing-card p {
+    @apply text-gray-text;
+  }
+  .pricing-card h2 {
+    @apply text-7xl my-5;
+  }
+  .pricing-card ul {
+    @apply mt-12 flex flex-col justify-center items-center gap-y-5;
+  }
+  .pricing-card li {
+    @apply bg-pricing-check-image bg-no-repeat pl-11;
   }
   /* Buttons */
   .button {
