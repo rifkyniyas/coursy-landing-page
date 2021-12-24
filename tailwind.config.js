@@ -10,6 +10,7 @@ module.exports = {
       },
       colors: {
         primary : '#01216e',
+        secondary: 'hsla(0, 0%, 100%, 0.1)',
         gray : {
           light: 'rgba(255, 255, 255, 0.7)',
           hover: 'rgba(255, 255, 255, 0.8)',

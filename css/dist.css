@@ -737,6 +737,10 @@ h5 {
   max-width: 72rem;
 }
 
+.grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
 .grid-cols-3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
@@ -802,12 +806,20 @@ h5 {
   background-color: rgb(1 33 110 / var(--tw-bg-opacity));
 }
 
+.bg-secondary {
+  background-color: hsla(0, 0%, 100%, 0.1);
+}
+
 .bg-hero-image {
   background-image: url('/images/hero-bg.svg');
 }
 
 .bg-cta-image {
   background-image: url('/images/cta-bg.svg');
+}
+
+.p-10 {
+  padding: 2.5rem;
 }
 
 .py-5 {
