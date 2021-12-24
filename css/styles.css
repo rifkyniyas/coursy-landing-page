@@ -31,6 +31,15 @@
   }
 }
 @layer components {
+  .main-container {
+    @apply max-w-6xl mx-auto px-8;
+  }
+  .flex-center {
+    @apply flex justify-center items-center;
+  }
+  .grid-center {
+    @apply grid justify-items-center items-center;
+  }
   .bg-image-cover {
     @apply bg-cover bg-no-repeat bg-scroll bg-center;
   }

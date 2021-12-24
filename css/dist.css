@@ -500,6 +500,20 @@ h5 {
   }
 }
 
+.main-container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 72rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.grid-center {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
 .bg-image-cover {
   background-size: cover;
   background-attachment: scroll;
@@ -655,22 +669,26 @@ h5 {
   top: 0px;
 }
 
-.-top-6 {
-  top: -1.5rem;
+.-top-24 {
+  top: -6rem;
+}
+
+.top-1\/4 {
+  top: 25%;
 }
 
 .-z-10 {
   z-index: -10;
 }
 
-.mx-auto {
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .my-auto {
   margin-top: auto;
   margin-bottom: auto;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .mr-8 {
@@ -709,6 +727,10 @@ h5 {
   margin-top: 5rem;
 }
 
+.mt-8 {
+  margin-top: 2rem;
+}
+
 .block {
   display: block;
 }
@@ -731,10 +753,6 @@ h5 {
 
 .min-h-screen {
   min-height: 100vh;
-}
-
-.max-w-6xl {
-  max-width: 72rem;
 }
 
 .grid-cols-4 {
@@ -855,6 +873,10 @@ h5 {
   padding-bottom: 8rem;
 }
 
+.pb-24 {
+  padding-bottom: 6rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -867,6 +889,11 @@ h5 {
 .text-7xl {
   font-size: 4.5rem;
   line-height: 1;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .text-white {
