@@ -58,6 +58,9 @@
   .chapter-list li {
     @apply flex items-center gap-x-5;
   }
+  .chapter-list li span {
+    @apply font-medium;
+  }
   .pricing-card {
     @apply bg-white p-10 text-center rounded-xl;
   }

@@ -466,40 +466,6 @@ h5 {
   font-weight: 500;
 }
 
-.container {
-  width: 100%;
-}
-
-@media (min-width: 640px) {
-  .container {
-    max-width: 640px;
-  }
-}
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .container {
-    max-width: 1024px;
-  }
-}
-
-@media (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-  }
-}
-
-@media (min-width: 1536px) {
-  .container {
-    max-width: 1536px;
-  }
-}
-
 .main-container {
   margin-left: auto;
   margin-right: auto;
@@ -559,6 +525,10 @@ h5 {
   align-items: center;
   -moz-column-gap: 1.25rem;
        column-gap: 1.25rem;
+}
+
+.chapter-list li span {
+  font-weight: 500;
 }
 
 .pricing-card {
@@ -641,8 +611,12 @@ h5 {
   position: relative;
 }
 
-.top-2\/4 {
-  top: 50%;
+.top-1\/4 {
+  top: 25%;
+}
+
+.right-0 {
+  right: 0px;
 }
 
 .left-0 {
@@ -651,10 +625,6 @@ h5 {
 
 .bottom-0 {
   bottom: 0px;
-}
-
-.right-0 {
-  right: 0px;
 }
 
 .left-auto {
@@ -673,8 +643,20 @@ h5 {
   top: -6rem;
 }
 
-.top-1\/4 {
-  top: 25%;
+.right-1\/2 {
+  right: 50%;
+}
+
+.-right-8 {
+  right: -2rem;
+}
+
+.-right-9 {
+  right: -2.25rem;
+}
+
+.-right-10 {
+  right: -2.5rem;
 }
 
 .-z-10 {
@@ -697,6 +679,10 @@ h5 {
 
 .mt-7 {
   margin-top: 1.75rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
 }
 
 .mr-5 {
@@ -727,10 +713,6 @@ h5 {
   margin-top: 5rem;
 }
 
-.mt-8 {
-  margin-top: 2rem;
-}
-
 .block {
   display: block;
 }
@@ -755,16 +737,24 @@ h5 {
   min-height: 100vh;
 }
 
+.max-w-xl {
+  max-width: 36rem;
+}
+
+.max-w-4xl {
+  max-width: 56rem;
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .grid-cols-4 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .grid-cols-3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-.grid-cols-2 {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .flex-col {
@@ -808,6 +798,16 @@ h5 {
 
 .gap-y-5 {
   row-gap: 1.25rem;
+}
+
+.gap-x-24 {
+  -moz-column-gap: 6rem;
+       column-gap: 6rem;
+}
+
+.gap-x-10 {
+  -moz-column-gap: 2.5rem;
+       column-gap: 2.5rem;
 }
 
 .rounded-xl {
