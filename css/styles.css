@@ -56,13 +56,13 @@
     @apply grid justify-items-center items-center;
   }
   .bg-image-cover {
-    @apply bg-cover bg-no-repeat bg-scroll bg-center;
+    @apply bg-cover bg-no-repeat bg-scroll;
   }
   .section-heading {
     @apply leading-snug my-5 md:text-6xl text-4xl font-medium;
   }
   .featured-container {
-    @apply bg-white h-32 rounded-xl flex justify-center items-center w-full;
+    @apply bg-white h-32 rounded-xl flex justify-center items-center w-full hover:drop-shadow-lg;
   }
   .featured-container img {
     @apply h-12;

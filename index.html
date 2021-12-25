@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./css/dist.css">
 </head>
 <body>
-    <div class="bg-hero-image bg-image-cover min-h-screen flex flex-col">
+    <div class="bg-hero-image pb-32 bg-[58%_center] bg-image-cover md:bg-center min-h-screen flex flex-col">
         <div>
             <header class="main-container relative py-5 px-8 flex items-center">
                 <a href="#" class="mr-8">
@@ -23,7 +23,8 @@
                 </nav>
                 <button class="button button-primary ml-auto">Enroll Now</button>
                 <button class="p-8 ml-8" onclick="toggleNavbar()">
-                    <img src="./images/hamburger-menu.svg" alt="">
+                    <img src="./images/hamburger-menu.svg"
+                    id="toggleBtn" alt="">
                 </button>
             </header>
         </div>
@@ -52,8 +53,9 @@
                         class="hidden md:block absolute top-1/4 right-0">
                 </div>
             </article>
-            <figure>
-                <img src="./images/hero-image.jpg" alt="hero-section-image" class="inline-block">
+            <figure class="flex justify-center items-center">
+                <img src="./images/hero-image.jpg" alt="hero-section-image" 
+                class="rounded-xl">
             </figure>
         </div>
     </div>
@@ -179,9 +181,13 @@
                     laoreet turpis vitae nibh
                     porta viverra. Vivamus mollis eros enim.</p>
             </section>
-            <div class="flex justify-center gap-x-8 mx-auto mt-16 max-w-3xl">
-                <img src="./images/slider-arrow-left.svg" alt="">
-                <div class="bg-secondary rounded-xl p-10">
+            <!-- grid-center grid-cols-3 auto-cols-max -->
+            <div class="flex justify-center flex-wrap md:flex-nowrap
+            gap-x-8 mx-auto mt-16 max-w-3xl">
+                <img src="./images/slider-arrow-left.svg" alt=""
+                class="order-2 md:order-1 mt-8">
+                <div class="bg-secondary rounded-xl p-10 
+                order-1 md:order-2 grow-0 shrink-0 basis-full">
                     <p class="mb-16 text-left">“ Lorem ipsum doler sit amet conse. Mauris volutpat elit sed tellus suscipit euis mod. Sed sit amet est vel dui
                         consequat lobortis. Sed sit amet est vel dui consequat lobortis. Lorem ipsum doler sit amet conse. Mauris
                         volutpat elit
@@ -196,7 +202,8 @@
                         </article>
                     </div>
                 </div>
-                <img src="./images/slider-arrow-right.svg" alt="">
+                <img src="./images/slider-arrow-right.svg" alt=""
+                class="order-3 mt-8">
             </div>
         </div>
     </div>
@@ -265,7 +272,7 @@
                         <li>Conseauris volutpat elit sed</li>
                     </ul>
                 </article>
-                <article class="pricing-card relative">
+                <article class="pricing-card relative drop-shadow-xl">
                     <h5>Single payment</h5>
                     <p>Lorem ipsum doler sit amet conseauris volutpat elit sed tellus.</p>
                     <h2>&dollar;420</h2>
@@ -346,7 +353,7 @@
             </div>
         </section>
     </div>
-    <div class="bg-cta-image bg-image-cover py-32">
+    <div class="bg-cta-image bg-image-cover bg-center py-32">
         <section class="main-container grid-center col-md-2 gap-x-28">
             <h1 class="text-white md:text-left text-center">Here comes the course headline</h1>
             <div class="flex relative">
