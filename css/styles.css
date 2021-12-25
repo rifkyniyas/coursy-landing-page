@@ -5,7 +5,7 @@
 @layer base {
   body {
     font-family: "General Sans", sans-serif;
-    @apply text-xl text-black;
+    @apply text-xl text-black w-full;
   }
   nav {
     @apply text-white;
@@ -24,13 +24,28 @@
     @apply underline;
   }
   h1 {
-    @apply leading-normal my-5 text-6xl font-medium;
+    @apply leading-normal my-5 md:text-6xl text-4xl font-medium;
   }
   h5 {
     @apply my-5 text-2xl font-medium;
   }
 }
 @layer components {
+  /*Grid System*/
+  .col-md-2 {
+    @apply grid-cols-1 md:grid-cols-2;
+  }
+  .col-md-3 {
+    @apply grid-cols-1 md:grid-cols-3;
+  }
+  .col-md-4 {
+    @apply grid-cols-1 md:grid-cols-4;
+  }
+  .navbar {
+    @apply absolute bottom-0 left-2/4 
+    flex flex-col bg-white text-black rounded-xl
+    md:flex-row md:justify-between md:static;
+  }
   .main-container {
     @apply max-w-6xl mx-auto px-8;
   }
@@ -44,10 +59,13 @@
     @apply bg-cover bg-no-repeat bg-scroll bg-center;
   }
   .section-heading {
-    @apply leading-snug my-5 text-6xl font-medium;
+    @apply leading-snug my-5 md:text-6xl text-4xl font-medium;
   }
   .featured-container {
-    @apply bg-white py-14 px-14 rounded-xl;
+    @apply bg-white h-32 rounded-xl flex justify-center items-center w-full;
+  }
+  .featured-container img {
+    @apply h-12;
   }
   .faq-container p {
     @apply text-gray-text;
