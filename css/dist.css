@@ -520,9 +520,13 @@ h5 {
 }
 
 .navbar {
+  width: calc(100% - 4rem);
+  /* top-32 */
   position: absolute;
-  bottom: 0px;
-  left: 50%;
+  top: 100%;
+  left: 0px;
+  margin-left: 2rem;
+  margin-right: 2rem;
   display: flex;
   flex-direction: column;
   border-radius: 0.75rem;
@@ -544,6 +548,19 @@ h5 {
   .navbar {
     justify-content: space-between;
   }
+
+  .navbar {
+    background-color: transparent;
+  }
+
+  .navbar {
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
+  }
+}
+
+.navbar a {
+  padding: 1.25rem;
 }
 
 .main-container {
@@ -552,6 +569,35 @@ h5 {
   max-width: 72rem;
   padding-left: 2rem;
   padding-right: 2rem;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.slider-item {
+  -webkit-animation: fade 1s;
+          animation: fade 1s;
+}
+
+.img-btns {
+  cursor: pointer;
 }
 
 .grid-center {
@@ -667,13 +713,20 @@ h5 {
 .button {
   display: inline-block;
   border-radius: 9999px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 500;
+}
+
+.button-small {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
   padding-left: 1.75rem;
   padding-right: 1.75rem;
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-  font-weight: 500;
 }
 
 .button-primary {
@@ -798,10 +851,6 @@ h5 {
   margin-left: auto;
 }
 
-.ml-8 {
-  margin-left: 2rem;
-}
-
 .mt-7 {
   margin-top: 1.75rem;
 }
@@ -836,6 +885,10 @@ h5 {
 
 .mt-20 {
   margin-top: 5rem;
+}
+
+.mb-5 {
+  margin-bottom: 1.25rem;
 }
 
 .block {
@@ -890,6 +943,10 @@ h5 {
   max-width: 56rem;
 }
 
+.flex-none {
+  flex: none;
+}
+
 .shrink-0 {
   flex-shrink: 0;
 }
@@ -900,11 +957,6 @@ h5 {
 
 .basis-full {
   flex-basis: 100%;
-}
-
-.auto-cols-max {
-  grid-auto-columns: -webkit-max-content;
-  grid-auto-columns: max-content;
 }
 
 .grid-cols-3 {
@@ -1005,12 +1057,12 @@ h5 {
   background-image: url('/images/cta-bg.svg');
 }
 
-.bg-center {
-  background-position: center;
-}
-
 .bg-\[58\%_center\] {
   background-position: 58% center;
+}
+
+.bg-center {
+  background-position: center;
 }
 
 .object-cover {
@@ -1022,8 +1074,8 @@ h5 {
   padding: 2rem;
 }
 
-.p-10 {
-  padding: 2.5rem;
+.p-7 {
+  padding: 1.75rem;
 }
 
 .py-5 {
@@ -1034,11 +1086,6 @@ h5 {
 .px-8 {
   padding-left: 2rem;
   padding-right: 2rem;
-}
-
-.px-5 {
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
 }
 
 .py-32 {
@@ -1126,6 +1173,14 @@ h5 {
     display: block;
   }
 
+  .md\:inline-block {
+    display: inline-block;
+  }
+
+  .md\:hidden {
+    display: none;
+  }
+
   .md\:w-auto {
     width: auto;
   }
@@ -1134,15 +1189,32 @@ h5 {
     grid-template-columns: repeat(6, minmax(0, 1fr));
   }
 
+  .md\:flex-row {
+    flex-direction: row;
+  }
+
   .md\:flex-nowrap {
     flex-wrap: nowrap;
+  }
+
+  .md\:items-center {
+    align-items: center;
   }
 
   .md\:bg-center {
     background-position: center;
   }
 
+  .md\:p-10 {
+    padding: 2.5rem;
+  }
+
   .md\:text-left {
     text-align: left;
+  }
+
+  .md\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }

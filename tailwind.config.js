@@ -20,6 +20,15 @@ module.exports = {
         black: '#1e2432',
         'hover-black': '#4b505b'
       },
+      animation: {
+        fade: 'fade 1s'
+      },
+      keyframes: {
+        fade : {
+          from: { opacity: 0.4 },
+          to: { opacity: 1 }
+        }
+      }
     }
   },
   plugins: [],
