@@ -31,7 +31,7 @@
   }
 }
 @layer components {
-  /*Grid System*/
+  /*Layout*/
   .col-md-2 {
     @apply grid-cols-1 md:grid-cols-2;
   }
@@ -41,6 +41,22 @@
   .col-md-4 {
     @apply grid-cols-1 md:grid-cols-4;
   }
+  .flex-center {
+    @apply flex justify-center items-center;
+  }
+  .grid-center {
+    @apply grid justify-items-center items-center;
+  }
+  .main-container {
+    @apply max-w-6xl mx-auto px-8;
+  }
+  .bg-image-cover {
+    @apply bg-cover bg-no-repeat bg-scroll;
+  }
+  .section-heading {
+    @apply leading-snug my-5 md:text-6xl text-4xl font-medium;
+  }
+  /* Scrolling */
   .js-scroll {
     @apply opacity-0 transition-opacity duration-500;
   }
@@ -50,6 +66,7 @@
   .scrolled.fade-in-bottom {
     @apply animate-fade-in-bottom;
   }
+  /* Page components */
   .navbar {
     width: calc(100% - 4rem);
     /* top-32 */
@@ -61,26 +78,11 @@
   .navbar a {
     @apply p-5;
   }
-  .main-container {
-    @apply max-w-6xl mx-auto px-8;
-  }
-  .flex-center {
-    @apply flex justify-center items-center;
-  }
   .slider-item {
     @apply animate-fade;
   }
   .img-btns {
     @apply cursor-pointer;
-  }
-  .grid-center {
-    @apply grid justify-items-center items-center;
-  }
-  .bg-image-cover {
-    @apply bg-cover bg-no-repeat bg-scroll;
-  }
-  .section-heading {
-    @apply leading-snug my-5 md:text-6xl text-4xl font-medium;
   }
   .featured-container {
     @apply bg-white h-32 rounded-xl flex justify-center items-center w-full hover:drop-shadow-lg;

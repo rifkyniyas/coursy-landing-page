@@ -11,9 +11,9 @@
 <body>
     <div class="bg-hero-image pb-32 bg-[58%_center] bg-image-cover md:bg-center min-h-screen flex flex-col">
         <div>
-            <header class="main-container js-scroll fade-in relative py-5 px-8 flex items-center">
+            <header class="main-container animate-fade-in-bottom relative py-5 px-8 flex items-center">
                 <a href="#" class="mr-8">
-                    <img src="./images/coursy-logo.svg" alt="logo" class="inline">
+                    <img src="./images/coursy-logo.svg" loading="lazy" alt="logo" class="inline">
                 </a>
                 <nav class="navbar hidden md:block" id="navbar">
                     <a href="">Home</a>
@@ -23,12 +23,12 @@
                 </nav>
                 <button class="button button-primary 
                     hidden md:inline-block flex-none ml-auto button-small">Enroll Now</button>
-                <img src="./images/hamburger-menu.svg"
-                    id="toggleBtn" class="p-8 ml-auto md:hidden" alt=""
+                <img src="./images/hamburger-menu.svg" loading="lazy"
+                    id="toggleBtn" class="p-8 ml-auto md:hidden" alt="hamburger-icon"
                     onclick="toggleNavbar()" >
             </header>
         </div>
-        <div class="main-container grid-center col-md-2 gap-x-28 gap-y-28 my-auto">
+        <div class="main-container animate-fade-in-bottom grid-center col-md-2 gap-x-28 gap-y-28 my-auto">
             <article class="flex flex-col align-center text-center md:text-left">
                 <h1 class="text-white">
                     Here comes the course headline
@@ -45,17 +45,18 @@
                             Enroll Now
                         </button>
                         <div class="flex items-center mt-8">
-                            <img src="./images/avatars.png" alt="hero-avatars" class="mr-5">
+                            <img src="./images/avatars.png" alt="hero-avatars" loading="lazy" 
+                            class="mr-5">
                             <span class="text-white">Join 1000+ students</span>
                         </div>
                     </div>
-                    <img src="./images/hero-arrow.svg" alt="up-arrow" 
+                    <img src="./images/hero-arrow.svg" loading="lazy" alt="up-arrow" 
                         class="hidden md:block absolute top-1/4 right-[20%]">
                 </div>
             </article>
             <figure class="flex justify-center items-center">
                 <img src="./images/hero-image.jpg" alt="hero-section-image" 
-                class="rounded-xl">
+                class="rounded-xl" loading="lazy">
             </figure>
         </div>
     </div>
@@ -65,34 +66,41 @@
             <div class="grid-center grid-cols-3 md:grid-cols-6 gap-x-4 gap-y-4">
                 <a href="#" class="featured-container">
                     <img src="./images/icon-treasury.svg" 
-                    alt="">
+                    alt="treasury-icon" loading="lazy">
                 </a>
                 <a href="#" class="featured-container">
                     <img src="./images/icon-vestwell.svg"
-                     alt="">
+                     alt="vestwell-icon" loading="lazy">
                 </a>
                 <a href="#" class="featured-container">
-                    <img src="./images/icon-loom.svg" alt="">
+                    <img src="./images/icon-loom.svg" 
+                    alt="loom-icon" loading="lazy">
                 </a>
                 <a href="#" class="featured-container">
-                    <img src="./images/icon-framer.svg" alt="">
+                    <img src="./images/icon-framer.svg" 
+                    alt="framer-icon" loading="lazy">
                 </a>
                 <a href="#" class="featured-container">
-                    <img src="./images/icon-patreon.svg" alt="">
+                    <img src="./images/icon-patreon.svg" 
+                    alt="patreon-icon" loading="lazy">
                 </a>
                 <a href="#" class="featured-container">
-                    <img src="./images/icon-linkedIn.svg" alt="">
+                    <img src="./images/icon-linkedIn.svg" 
+                    alt="linkedin-icon" loading="lazy">
                 </a>
             </div>
         </section>
     </div>
     <div class="relative py-32">
         <img src="./images/yellow-circle-instructor.svg" alt="yellow-image" 
-        class="absolute top-1/4 left-0">
+        class="absolute top-1/4 left-0" loading="lazy">
         <div class="main-container js-scroll fade-in grid-center col-md-2 gap-x-28 ">
             <aside class="relative">
-                <img src="./images/instructor-image-1.jpg" alt="instructor-image" class="rounded-xl">
-                <img src="./images/teacher-rectangle.svg" alt="rectangle" class="absolute bottom-0 right-0 left-auto top-auto">
+                <img src="./images/instructor-image-1.jpg" 
+                alt="instructor-image" class="rounded-xl" loading="lazy">
+                <img src="./images/teacher-rectangle.svg" alt="rectangle" 
+                class="absolute bottom-0 right-0 left-auto top-auto"
+                loading="lazy">
             </aside>
             <section>
                 <h2 class="section-heading">Meet Susan Reyes, your course teacher</h2>
@@ -106,7 +114,7 @@
     </div>
     <div class="relative py-32">
         <img src="./images/orange-rectangle.svg" 
-            alt=""
+            alt="orange-rectangle" loading="lazy"
             class="absolute top-1/4 right-0 -z-10">
         <div class="main-container js-scroll fade-in grid-center col-md-2 gap-x-28 ">
             <section class="order-last md:order-first">
@@ -116,31 +124,36 @@
                     lobortis.</p>
                 <ul class="chapter-list">
                     <li>
-                        <img src="./images/chapter-icon-1.svg" alt="">
+                        <img src="./images/chapter-icon-1.svg" 
+                        loading="lazy" alt="chapter-icon-1">
                         <span>Introduction to marketing</span> 
                     </li>
                     <li>
-                        <img src="./images/chapter-icon-2.svg" alt="">
+                        <img src="./images/chapter-icon-2.svg" 
+                        loading="lazy" alt="chapter-icon-2">
                         <span>Growth marketing</span> 
                     </li>
                     <li>
-                        <img src="./images/chapter-icon-3.svg" alt="">
+                        <img src="./images/chapter-icon-3.svg" 
+                        loading="lazy" alt="chapter-icon-3">
                         <span>Marketing strategies</span> 
                     </li>
                     <li>
-                        <img src="./images/chapter-icon-4.svg" alt="">
+                        <img src="./images/chapter-icon-4.svg" 
+                        loading="lazy" alt="chapter-icon-4">
                         <span>Marketing automation</span> 
                     </li>
                 </ul>
             </section>
             <figure class="order-first md:order-last">
-                <img src="./images/instructor-image-2.jpg" alt="" class="rounded-xl">
+                <img src="./images/instructor-image-2.jpg" 
+                alt="instructor-image" loading="lazy" class="rounded-xl">
             </figure>
         </div>
     </div>
     <div class="bg-primary text-white text-center py-32 relative">
-        <img src="./images/blue-circle-1-4.svg" alt=""
-        class="absolute top-0 left-0 w-1/5 md:w-auto">
+        <img src="./images/blue-circle-1-4.svg" alt="blue-circle"
+        class="absolute top-0 left-0 w-1/5 md:w-auto" loading="lazy">
         <div class="main-container js-scroll fade-in">
             <section class="text-center mx-auto max-w-xl">
                 <h1>Start learning today</h1>
@@ -172,7 +185,7 @@
         </div>
     </div>
     <div class="bg-primary text-white text-center py-32 relative">
-        <img src="./images/yellow-rectangle.svg" alt="" 
+        <img src="./images/yellow-rectangle.svg" alt="yellow-rectangle" loading="lazy"
         class="absolute top-0 right-0 left-auto bottom-auto w-1/5 md:w-auto">
         <div class="main-container js-scroll fade-in">
             <section class="text-center mx-auto max-w-xl">
@@ -183,7 +196,7 @@
             </section>
             <div class="flex justify-center flex-wrap md:flex-nowrap
             gap-x-8 mx-auto mt-16 max-w-3xl">
-                <img src="./images/slider-arrow-left.svg" alt=""
+                <img src="./images/slider-arrow-left.svg" alt="left-arrow" loading="lazy"
                 class="order-2 md:order-1 mt-8 img-btns" onclick="plusSlides(-1)">
                 <!--Carousel Begin-->
                 <div class="order-1 md:order-2">
@@ -196,7 +209,8 @@
                             sed tellus suscipit euis mod. Sed sit amet est vel dui consequat lobortis. Sed sit amet est vel dui consequat
                             lobortis. ”</p>
                         <div class="flex flex-col md:flex-row md:items-center items-start">
-                            <img src="./images/instructor-image-1.jpg" alt="" class="w-16 h-16 object-cover rounded-full mr-5 mb-5">
+                            <img src="./images/instructor-image-1.jpg" 
+                            alt="testimonial-image" loading="lazy" class="w-16 h-16 object-cover rounded-full mr-5 mb-5">
                             <article class="flex flex-col items-start text-left">
                                 <h6 class="text-lg">Caitlin Hutchinson</h6>
                                 <p class="text-gray-light text-lg md:text-xl my-0">Marketing Director @ Sendlane</p>
@@ -212,7 +226,9 @@
                             sed tellus suscipit euis mod. Sed sit amet est vel dui consequat lobortis. Sed sit amet est vel dui consequat
                             lobortis. ”</p>
                         <div class="flex flex-col md:flex-row md:items-center items-start">
-                            <img src="./images/instructor-image-1.jpg" alt="" class="w-16 h-16 object-cover rounded-full mr-5 mb-5">
+                            <img src="./images/instructor-image-1.jpg" 
+                            alt="testimonial-image" loading="lazy"
+                            class="w-16 h-16 object-cover rounded-full mr-5 mb-5">
                             <article class="flex flex-col items-start text-left">
                                 <h6 class="text-lg">Caitlin Hutchinson</h6>
                                 <p class="text-gray-light text-lg md:text-xl my-0">Marketing Director @ Sendlane</p>
@@ -221,7 +237,7 @@
                     </div>
                 </div>
                 <!--End of Carousel-->
-                <img src="./images/slider-arrow-right.svg" alt=""
+                <img src="./images/slider-arrow-right.svg" alt="right-arrow" loading="lazy"
                 class="order-3 mt-8 img-btns" onclick="plusSlides(1)">
             </div>
         </div>
@@ -231,42 +247,42 @@
             <h1 class="block max-w-xl">Is this course right for me or my team?</h1>
             <div class="grid col-md-3 mt-16 gap-x-5 gap-y-16">
                 <article>
-                    <img src="./images/aspiring-icon-3.svg" alt="">
+                    <img src="./images/aspiring-icon-3.svg" alt="aspiring-icon" loading="lazy">
                     <h5>Aspiring marketers</h5>
                     <p class="text-gray-text">Lorem ipsum doler sit amet conse. Mauris volutpat elit sed tellus suscipit euis mod. Sed sit amet est vel dui
                         consequat
                         lobortis.</p>
                 </article>
                 <article>
-                    <img src="./images/students-icon-3.svg" alt="">
+                    <img src="./images/students-icon-3.svg" alt="students-icon" loading="lazy">
                     <h5>Students</h5>
                     <p class="text-gray-text">Lorem ipsum doler sit amet conse. Mauris volutpat elit sed tellus suscipit euis mod. Sed sit amet est vel dui
                         consequat
                         lobortis.</p>
                 </article>
                 <article>
-                    <img src="./images/growth-icon-3.svg" alt="">
+                    <img src="./images/growth-icon-3.svg" alt="growth-icon" loading="lazy">
                     <h5>Growth hackers</h5>
                     <p class="text-gray-text">Lorem ipsum doler sit amet conse. Mauris volutpat elit sed tellus suscipit euis mod. Sed sit amet est vel dui
                         consequat
                         lobortis.</p>
                 </article>
                 <article>
-                    <img src="./images/product-icon-3.svg" alt="">
+                    <img src="./images/product-icon-3.svg" alt="product-icon" loading="lazy">
                     <h5>Product managers</h5>
                     <p class="text-gray-text">Lorem ipsum doler sit amet conse. Mauris volutpat elit sed tellus suscipit euis mod. Sed sit amet est vel dui
                         consequat
                         lobortis.</p>
                 </article>
                 <article>
-                    <img src="./images/developers-icon-3.svg" alt="">
+                    <img src="./images/developers-icon-3.svg" alt="developers-icon" loading="lazy">
                     <h5>Developers</h5>
                     <p class="text-gray-text">Lorem ipsum doler sit amet conse. Mauris volutpat elit sed tellus suscipit euis mod. Sed sit amet est vel dui
                         consequat
                         lobortis.</p>
                 </article>
                 <article>
-                    <img src="./images/ceos-icon-3.svg" alt="">
+                    <img src="./images/ceos-icon-3.svg" alt="ceo-icon" loading="lazy">
                     <h5>CEOs</h5>
                     <p class="text-gray-text">Lorem ipsum doler sit amet conse. Mauris volutpat elit sed tellus suscipit euis mod. Sed sit amet est vel dui
                         consequat lobortis.</p>
@@ -302,7 +318,7 @@
                         <li>Lorem ipsum doler sit amet</li>
                         <li>Conseauris volutpat elit sed</li>
                     </ul>
-                    <img src="./images/recommended-arrow.svg" alt="" 
+                    <img src="./images/recommended-arrow.svg" alt="reccommended-arrow" loading="lazy"
                     class="absolute left-1/4 -top-24 right-0 bottom-auto">
                 </article>
             </div>
@@ -310,7 +326,7 @@
     </div>
     <div class="relative py-32">
         <img src="./images/pink-circle-faq.svg" 
-        alt="circle" 
+        alt="circle" loading="lazy"
         class="absolute top-0 right-0 md:w-auto w-1/3">
         <section class="main-container js-scroll fade-in">
             <h1>Frequently asked questions</h1>
@@ -381,11 +397,12 @@
                         Enroll Now
                     </button>
                     <div class="flex items-center mt-8">
-                        <img src="./images/avatars.png" alt="hero-avatars" class="mr-5">
+                        <img src="./images/avatars.png" loading="lazy" 
+                        alt="hero-avatars" class="mr-5">
                         <span class="text-white">Join 1000+ students</span>
                     </div>
                 </div>
-                <img src="./images/hero-arrow.svg" alt="up-arrow" 
+                <img src="./images/hero-arrow.svg" alt="up-arrow" loading="lazy" 
                 class="absolute top-1/4 -right-10 hidden md:block">
             </div>
         </section>
@@ -393,7 +410,7 @@
     <footer class="py-32 bg-primary text-white">
         <div class="main-container js-scroll fade-in grid-center col-md-4 gap-x-28 gap-y-5">
             <div class="md:col-span-2">
-                <img src="./images/coursy-logo.svg" alt="">
+                <img src="./images/coursy-logo.svg" alt="coursy-logo" loading="lazy">
                 <p class="text-gray-light">Lorem ipsum doler sit amet conse. Mauris volutpat elit sed tellus suscipit euis mod. Sed sit amet est vel dui
                     consequat
                     lobortis.</p>
@@ -413,7 +430,8 @@
                 </nav>
             </div>
             <figure class="h-100">
-                <img src="./images/footer-arrow.svg" alt="" class="img-btns">
+                <img src="./images/footer-arrow.svg" alt="scroll-to-top-arrow" 
+                loading="lazy" class="img-btns">
             </figure>
         </div>
     </footer>

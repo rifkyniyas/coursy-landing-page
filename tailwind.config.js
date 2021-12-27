@@ -22,7 +22,7 @@ module.exports = {
       },
       animation: {
         fade: 'fade 1s',
-        'fade-in-bottom': 'fade-in-bottom 1s ease-in-out both'
+        'fade-in-bottom': 'fade-in-bottom 2s ease-in-out both'
       },
       keyframes: {
         fade : {
