@@ -22,7 +22,7 @@ module.exports = {
       },
       animation: {
         fade: 'fade 1s',
-        'fade-in-bottom': 'fade-in-bottom 2s ease-in-out both'
+        'fade-in-bottom': 'fade-in-bottom 1s ease-in-out both'
       },
       keyframes: {
         fade : {
@@ -37,7 +37,7 @@ module.exports = {
         },
         'fade-in-bottom': {
           from: {
-            transform: 'translateY(+100%)',
+            transform: 'translateY(+50px)',
             opacity : 0
           },
           to: {
