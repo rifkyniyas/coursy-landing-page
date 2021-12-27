@@ -20,9 +20,9 @@ const showSlides = (n) => {
   if (n < 1) slideIndex = slides.length
 
   for (i = 0; i < slides.length; i++) {
-    slides[i].classList.add("hidden");
+    slides[i].style.display = "none";
   }
-  slides[slideIndex-1].classList.add("block") 
+  slides[slideIndex-1].style.display = "block" 
   setTimeout(showSlides, 2000);
 }
 
@@ -75,3 +75,7 @@ const handleScrollAnimation = () => {
 window.addEventListener("scroll", () => { 
   handleScrollAnimation();
 });
+
+const scrollToTop= () => {
+  window.scrollTo({top: 0, behavior: 'smooth'});
+}
