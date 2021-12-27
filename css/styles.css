@@ -41,6 +41,15 @@
   .col-md-4 {
     @apply grid-cols-1 md:grid-cols-4;
   }
+  .js-scroll {
+    @apply opacity-0 transition-opacity duration-500;
+  }
+  .js-scroll.scrolled {
+    @apply opacity-100;
+  }
+  .scrolled.fade-in-bottom {
+    @apply animate-fade-in-bottom;
+  }
   .navbar {
     width: calc(100% - 4rem);
     /* top-32 */
