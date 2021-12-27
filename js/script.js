@@ -20,10 +20,10 @@ const showSlides = (n) => {
   if (n < 1) slideIndex = slides.length
 
   for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
+    slides[i].classList.add("hidden");
   }
-  slides[slideIndex-1].style.display = "block";
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
+  slides[slideIndex-1].classList.add("block") 
+  setTimeout(showSlides, 2000);
 }
 
 // Next/previous controls

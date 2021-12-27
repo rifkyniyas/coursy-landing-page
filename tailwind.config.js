@@ -1,5 +1,5 @@
 module.exports = {
-  content: ["./*.{html,js}"],
+  content: ["./*.html,./js/script.js"],
   theme: {
 
     extend: {
@@ -21,18 +21,16 @@ module.exports = {
         'hover-black': '#4b505b'
       },
       animation: {
-        fade: 'fade 1s',
+        fade: 'fade 1.5s ease-in-out',
         'fade-in-bottom': 'fade-in-bottom 1s ease-in-out both'
       },
       keyframes: {
         fade : {
           from: { 
             opacity: 0.4, 
-            transform: 'translateX(-100%)'
           },
           to: { 
             opacity: 1,
-            transform: 'translateX(0)'
           }
         },
         'fade-in-bottom': {
