@@ -3,9 +3,12 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    @apply text-sm md:text-base;
+  }
   body {
     font-family: "General Sans", sans-serif;
-    @apply text-xl text-black w-full;
+    @apply text-sm md:text-xl text-black w-full;
   }
   nav {
     @apply text-white;
